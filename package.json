@@ -1,0 +1,15 @@
+{
+  "name": "google-sheets-express-routes",
+  "version": "1.0.0",
+  "description": "A simple module of routes to add to an Express server to interact with Google Spreadsheets.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickproz/google-spreadsheet-express.git"
+  },
+  "author": "nick.prozorovsky@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "google-spreadsheet": "^2.0.3"
+  }
+}
