@@ -61,8 +61,8 @@ Gets information about the entire spreadsheet.
     "title": "Spreadsheet Title",
     "updated": "2018-02-12T03:13:12.451Z",
     "author": {
-        "name": "nick.prozorovsky",
-        "email": "nick.prozorovsky@gmail.com"
+        "name": "nick.proz",
+        "email": "nick.proz@gmail.com"
     },
     "worksheets": [
         {
@@ -254,7 +254,7 @@ Creates a new row in the spreadsheet. The row is appended to the spreadsheet aft
 ```json
 {
   "First Name": "Nick",
-  "Last Name": "Prozorovsky",
+  "Last Name": "Proz",
   "Dietary Restriction": "None",
   "Can Attend": "Yes"
 }
@@ -273,7 +273,7 @@ invalid sheet index has been provided, an empty 200 response will be returned
 ```json
 {
   "First Name": "Nick",
-  "Last Name": "Prozorovsky",
+  "Last Name": "Proz",
   "Dietary Restriction": "None",
   "Can Attend": "Yes"
 }
