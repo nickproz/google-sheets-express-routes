@@ -1,7 +1,7 @@
 // @ts-ignore
 import { GoogleSpreadsheet, GoogleSpreadsheetRow, GoogleSpreadsheetWorksheet } from 'google-spreadsheet';
 import { GoogleCredentials} from "./model/google-credentials.interface";
-import { SheetRowData } from "./model/row-data-map.interface";
+import { SheetRowData } from "./model/sheet-row-data.interface";
 
 export default class GoogleSheetsApi {
 
@@ -29,7 +29,7 @@ export default class GoogleSheetsApi {
      * @param rowData - row data to write to our spreadsheet
      * @param sheetIndex - optional sheet index
      */
-    public async createRow(sheetId: string, rowData: any, sheetIndex: number = 0): Promise<any> {
+    public async createRow(sheetId: string, rowData: SheetRowData, sheetIndex: number = 0): Promise<any> {
         const sheet: GoogleSpreadsheetWorksheet = await this.loadSheet(sheetId, sheetIndex);
         const row: GoogleSpreadsheetRow = await sheet.addRow(rowData);
         return row.save();

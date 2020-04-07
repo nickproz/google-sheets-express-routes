@@ -1,7 +1,7 @@
 {
   "name": "google-sheets-api",
   "version": "1.0.0",
-  "description": "A simple api to interact with Google Spreadsheets.",
+  "description": "A simple api for interacting with Google Spreadsheets.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist/**/*"],
