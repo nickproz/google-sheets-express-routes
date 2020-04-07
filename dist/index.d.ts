@@ -1,5 +1,5 @@
 import { GoogleCredentials } from "./model/google-credentials.interface";
-import { SheetRowData } from "./model/row-data-map.interface";
+import { SheetRowData } from "./model/sheet-row-data.interface";
 export default class GoogleSheetsApi {
     private readonly credentials;
     constructor(credentials: GoogleCredentials);
@@ -17,7 +17,7 @@ export default class GoogleSheetsApi {
      * @param rowData - row data to write to our spreadsheet
      * @param sheetIndex - optional sheet index
      */
-    createRow(sheetId: string, rowData: any, sheetIndex?: number): Promise<any>;
+    createRow(sheetId: string, rowData: SheetRowData, sheetIndex?: number): Promise<any>;
     private loadSheet;
     private loadDocument;
     private transformRows;
