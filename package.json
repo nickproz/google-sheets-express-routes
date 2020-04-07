@@ -1,11 +1,19 @@
 {
-  "name": "google-sheets-express-routes",
+  "name": "google-sheets-api",
   "version": "1.0.0",
-  "description": "A simple module of routes to add to an Express server to interact with Google Spreadsheets.",
-  "main": "index.js",
+  "description": "A simple api to interact with Google Spreadsheets.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist/**/*"],
   "author": "nick.prozorovsky@gmail.com",
   "license": "ISC",
+  "scripts": {
+    "build": "tsc --skipLibCheck"
+  },
   "dependencies": {
-    "google-spreadsheet": "^2.0.3"
+    "google-spreadsheet": "3.0.10"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
   }
 }
